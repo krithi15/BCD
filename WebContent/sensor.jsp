@@ -15,6 +15,11 @@ float: left;
 width: 220px;
 margin-left: 10px;
 }
+
+input, textarea{
+width: 200px;
+margin-bottom: 5px;
+}
 </style>
 <script type="text/javascript">
  function addNew()
@@ -25,14 +30,15 @@ margin-left: 10px;
 </script>
 </head>
 <body>
-Enter Sensor Information
+Enter Sensor Information<br><br>
 <form name="form" action="post">
 <label>Sensor Number</label>
 <input type="text" name=t1><br><br>
 <label>Time On</label>
- <input type="text" name=t1><br>
+<input type="text" name=t1><br><br>
 <input type="button" value="Add" onClick="addNew()">
-<div id="my_div"></div>
+<div id="my_div"></div><br>
+<input type="submit" value="Submit">
 </form>
 </body>
 </html>
