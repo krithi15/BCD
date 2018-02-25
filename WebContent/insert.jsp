@@ -16,6 +16,12 @@ margin-left: 10px;
 width: 15em;
 }
 
+.divider{
+    width:10px;
+    height:auto;
+    display:inline-block;
+}
+
 input, textarea{
 width: 200px;
 margin-bottom: 5px;
@@ -31,7 +37,11 @@ body {
 </style>
 </head>
 <body>
-<form name="insertinfo" action="login" method="post">
+<div id ="header">
+ <h2>Behavior Change Detection</h2>
+</div>
+<div id="form_info" >
+<form name="insertinfo" action="sensor.jsp" method="post">
 <p>Please Enter the following Information <br><br><br> 
 <label>Activity Name </label>
 <input type="text" name="activity" class="boxes"> <br><br>
@@ -45,8 +55,13 @@ body {
 <input type ="text" name="stime"  class="boxes"> <br><br>
 <label>Stop time </label>
 <input type ="text" name="stoptime" class="boxes" > <br><br><br>
-<input type ="submit" value="Submit">
+<div style="text-align: left"> 
+<a href="sensor.jsp"><input type ="submit" value="Submit"></a>
+<div class="divider"/>
+<a href="home.jsp"><input type="button" name="cancel" value="Cancel" /></a>
+</div>
 </p>
 </form>
+</div>
 </body>
 </html>

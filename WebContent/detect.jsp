@@ -16,6 +16,12 @@ margin-left: 10px;
 width: 15em;
 }
 
+.divider{
+    width:10px;
+    height:auto;
+    display:inline-block;
+}
+
 input, textarea{
 width: 200px;
 margin-bottom: 5px;
@@ -28,6 +34,10 @@ body {
 </style>
 </head>
 <body>
+<div id ="header">
+ <h2>Behavior Change Detection</h2>
+</div>
+<div id="content">
 <form name="detectinfo" action="patientLogin" method="post">
 <label>Enter Patient Name </label>         
 <input type="text" name="name" class="boxes"> <br><br>
@@ -35,8 +45,12 @@ body {
 <input type="checkbox" name="type" value="RuLSIF">RuLSIF <br>
 <input type="checkbox" name="type" value="sw-PCAR">sw-PCAR <br>
 <input type="checkbox" name="type" value="Virtual Classifier">Virtual Classifier <br><br>
-<input type ="submit" value="Detect">
+<div style="text-align: left"> 
+<input type ="submit" value="Submit">
+<div class="divider"/>
+<a href="home.jsp"><input type="button" name="cancel" value="Cancel" /></a>
+</div>
 </form>
-
+</div>
 </body>
 </html>

@@ -19,15 +19,18 @@ nav {
 </style>
 </head>
 <body>
-This application helps to determine Behavior Change Detection in a Patient and if the Patient needs attention.
+<div id="header">
+  <h2>Behavior Change Detection</h2>
+</div>
  	<div id="menu_tab">  
-                             
-          <ul class="menu">                         
+        <ul class="menu">                         
                      <li><a href="home.jsp" class="nav"> Home </a></li>
                      <li><a href="insert.jsp" class="nav"> Insert</a></li>
                      <li><a href="detect.jsp"class="nav"> Detect</a></li>
-                     
-      </ul>
+          </ul>
+   	</div>
+   	<div id ="main_content">
+   	<p> This application helps to determine Behavior Change Detection in a Patient and if the Patient needs attention. </p>
    	</div>
 </body>
 </html>

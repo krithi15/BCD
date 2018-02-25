@@ -20,6 +20,12 @@ input, textarea{
 width: 200px;
 margin-bottom: 5px;
 }
+
+.divider{
+    width:10px;
+    height:auto;
+    display:inline-block;
+}
 </style>
 <script type="text/javascript">
  function addNew()
@@ -30,6 +36,10 @@ margin-bottom: 5px;
 </script>
 </head>
 <body>
+<div id="header">
+ <h2>Behavior Change Detection</h2>
+</div>
+<div id="content">
 Enter Sensor Information<br><br>
 <form name="form" action="post">
 <label>Sensor Number</label>
@@ -38,7 +48,11 @@ Enter Sensor Information<br><br>
 <input type="text" name=t1><br><br>
 <input type="button" value="Add" onClick="addNew()">
 <div id="my_div"></div><br>
-<input type="submit" value="Submit">
+<div style="text-align: left"> 
+<a href="sensor.jsp"><input type ="submit" value="Submit"></a>
+<div class="divider"/>
+<a href="home.jsp"><input type="button" name="cancel" value="Cancel" /></a>
 </form>
+</div>
 </body>
 </html>
