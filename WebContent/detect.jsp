@@ -38,9 +38,9 @@ body {
  <h2>Behavior Change Detection</h2>
 </div>
 <div id="content">
-<form name="detectinfo" action="patientLogin" method="post">
+<form name="detectinfo" action="http://localhost:8080/Trail/DetectServlet" method="post">
 <label>Enter Patient Name </label>         
-<input type="text" name="name" class="boxes"> <br><br>
+<input type="text" name="pname" class="boxes"> <br><br>
 <label>Identify Method</label>  <br>
 <input type="checkbox" name="type" value="RuLSIF">RuLSIF <br>
 <input type="checkbox" name="type" value="sw-PCAR">sw-PCAR <br>

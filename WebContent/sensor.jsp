@@ -41,7 +41,7 @@ margin-bottom: 5px;
 </div>
 <div id="content">
 Enter Sensor Information<br><br>
-<form name="form" action="post">
+<form name="form"  action = "http://localhost:8080/Trail/SensorServlet" method="post">
 <label>Sensor Number</label>
 <input type="text" name=t1><br><br>
 <label>Time On</label>

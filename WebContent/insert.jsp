@@ -41,12 +41,12 @@ body {
  <h2>Behavior Change Detection</h2>
 </div>
 <div id="form_info" >
-<form name="insertinfo" action="sensor.jsp" method="post">
+<form name="insertinfo" action="http://localhost:8080/Trail/insertServlet" method="post">
 <p>Please Enter the following Information <br><br><br> 
 <label>Activity Name </label>
 <input type="text" name="activity" class="boxes"> <br><br>
 <label>Patient Name </label>         
-<input type="text" name="name" class="boxes"> <br><br>
+<input type="text" name="pname" class="boxes"> <br><br>
 <label>Age</label>
 <input type ="text" name="age" class="boxes"> <br><br>
 <label>Number of Sensors On</label>
